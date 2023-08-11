@@ -1,0 +1,67 @@
+@font-face {
+
+    /* ESTO VA PARA EL PARCIAL...
+    les vamos a dar el css y 2 archivos
+    ajustar rutas */
+    font-family: 'MI PRIMER FUENTE';
+    src:
+        url('fonts/nesatho-webfont.woff2') format('woff2'),
+        url('fonts/nesatho-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#header {
+    /* Define la imagen de fondo */
+    background-image: url("../img/450_1000.jpg");
+   
+    /* Asegúrate de que la imagen de fondo cubra toda el área */
+    background-size: cover;
+    
+    /* Fija la imagen de fondo para que no se desplace con el contenido */
+    background-attachment: fixed;
+    /*Se pone relative para que el color agregado adelante de la foto, ocupe toda la foto*/
+    position: relative;
+    /* Ajusta la altura del contenedor para ocupar toda la pantalla */
+    height: 100vh;
+    
+    /* Elimina el margen y el padding para asegurarte de que ocupe todo el espacio */
+    margin: 0;
+    padding: 0;
+
+}
+#header::before {
+    /* Establece el color que se superpondrá a la imagen */
+  content: "";
+    background-color: rgba(145, 0, 0, 0.87);  /* Cambia el color y la opacidad según tus preferencias */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+}
+
+#header div div nav ul li a {
+    
+    position:relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    padding: 10px;
+    color: white;
+  
+}
+
+#header div div div figure img  {
+    /* Estilos para la imagen */
+    
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px; /* Tamaño de la imagen, ajustar según tus necesidades */
+    height: auto; /* Ajusta la altura automáticamente en proporción */
+}
